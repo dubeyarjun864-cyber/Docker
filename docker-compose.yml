@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  cosmic_bot:
+    build: .
+    container_name: cosmic_botz
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - .:/app
